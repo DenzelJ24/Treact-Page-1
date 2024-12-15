@@ -646,88 +646,6 @@ color: white;
     cursor: pointer;
 }
 
-/*TESTIMONIALS*/
- #testimonials .row{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin: 0 24px;
-}
-
-.testimonials__img,.testimonials__description {
-    width: 50%;
-
-}
-.testimonial__details {
-    display: flex;
-    
-}
-
-.testimonials__description {
-    padding-left: 64px;
-}
-
-.testimonial {
-    margin-top: 40px;
-}
-
-.testimonial__rating {
-    color: gold;
-}
-
-.testimonial__title {
-    margin-top: 16px;
-}
-
-.testimonial__title,.testimonial__name {
-    color: #243e63;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.5px;
-}
-
-.testimonial__para {
-    margin: 16px 0 40px 0;
-    color: #4a5568;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-}
-
-.testimonial__lower {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*FOOTER*/
 
 footer {
@@ -774,3 +692,96 @@ footer {
     text-decoration-thickness: 2px;
 }
 
+/*TESTIMONIALS*/
+ #testimonials .row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 24px;
+}
+.testimonials__img {
+    display: flex;
+    width: 100%;
+
+}
+
+.testimonials__img-wrapper {
+    display: flex;
+    height: 190px;
+    justify-content: center;  
+}
+
+.testimonials__description {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    
+
+}
+.section__title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.section__heading { font-size: 50px;
+    font-weight: 700;
+    color:#243e63;
+}
+
+.section__para {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    margin: 16px;
+}
+.testimonial__rating {
+    color:rgb(246 173 85);
+}
+
+.testimonial__title {
+    display: flex;
+    margin: 16px;
+    font-size: 20px;
+}
+
+.testimonial__para {
+     font-size: 16px;
+    margin: 16px 0px 32px;
+    line-height: 1.8;
+}
+
+.testimonial__lower {
+    display: flex;
+    }
+
+.testimonial__profile {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial__hale--img {
+display: flex;
+align-items: center;
+border-radius: 250px;
+height: 50px;
+width: 50px;
+}
+
+.testimonial__details {display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+.testimonial__name { font-size: 20px;
+    color: #243e63;
+    font-weight: 700;
+}
+
+.testimonial__role {
+    font-size: 16px;
+    color: #7c8ba1;
+}
