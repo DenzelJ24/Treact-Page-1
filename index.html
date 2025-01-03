@@ -9,20 +9,20 @@
       src="https://kit.fontawesome.com/a78d91bcb9.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"defer></script>
   </head>
   <body>
     <section id="landing">
       <nav>
         <div class="nav__row">
-
           <div class="row">
             <div class="nav__container">
               <a href="#">
                 <div class="logo__wrapper">
                   <img
-                  class="logo"
-                  src="	https://treact.owaiskhan.me/static/media/logo.2c489fc453a1783cbadacf914efa3df6.svg"
-                  alt=""
+                    class="logo"
+                    src="	https://treact.owaiskhan.me/static/media/logo.2c489fc453a1783cbadacf914efa3df6.svg"
+                    alt=""
                   />
                   <h1 class="logo__text">Treact</h1>
                 </div>
@@ -37,13 +37,15 @@
                     <a href="" class="nav__link link__hover-effect">Pricing</a>
                   </li>
                   <li>
-                    <a href="" class="nav__link link__hover-effect">Contact Us</a>
+                    <a href="" class="nav__link link__hover-effect"
+                      >Contact Us</a
+                    >
                   </li>
                   <li>
                     <a
-                    href=""
-                    class="nav__link nav__link--margin link__hover-effect"
-                    >Login</a
+                      href=""
+                      class="nav__link nav__link--margin link__hover-effect"
+                      >Login</a
                     >
                   </li>
                   <li>
@@ -53,12 +55,42 @@
               </a>
             </div>
           </div>
-        </div>
-        </nav>
-        <header class="header__container">
-        <div class="header__row">
 
           
+          <!--- burger menu --->
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fa-solid fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="" class="menu__link"onclick="closeMenu()">About</a>
+              </li>
+              <li class="menu__list">
+                <a href="" class="menu__link"onclick="closeMenu()">Blog</a>
+              </li>
+              <li class="menu__list">
+                <a href="" class="menu__link"onclick="closeMenu()">Pricing</a>
+              </li>
+              <li class="menu__list">
+                <a href="" class="menu__link"onclick="closeMenu()">Contact Us</a>
+              </li>
+              <li class="menu__list">
+                <a href="" class="menu__link"onclick="closeMenu()">Login</a>
+              </li>
+              <li class="menu__list menu__list--primary">
+                <a href="" class="menu__link nav__link--primary">Sign Up</a>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </nav>
+      <header class="header__container">
+        <div class="header__row">
           <div class="header__description">
             <h1 class="header__description--title">
               Beautiful React Templates <span class="purple">for you.</span>
@@ -68,37 +100,34 @@
               modular components with a variety of pages and components.
             </p>
             <div class="header__email">
-              
               <form action="email">
                 <input type="text" placeholder="Your E-mail Address" />
                 <div class="header__btn--wrapper"></div>
-                
+
                 <button class="btn header__btn">Get Started</button>
               </form>
             </div>
             <div class="tag">
-              
               <p class="header__description--para-2">OUR TRUSTED CUSTOMERS</p>
               <img
-              class="header__description--img"
-              src="	https://treact.owaiskhan.me/static/media/customers-logo-strip.680ac7c2e8ae28161d2c.png"
-              alt=""
+                class="header__description--img"
+                src="	https://treact.owaiskhan.me/static/media/customers-logo-strip.680ac7c2e8ae28161d2c.png"
+                alt=""
               />
             </div>
           </div>
-          
+
           <figure class="header__img--wrapper">
             <img
-            src="https://treact.owaiskhan.me/static/media/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
-            alt=""
-            class="header__img"
+              src="https://treact.owaiskhan.me/static/media/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
+              alt=""
+              class="header__img"
             />
           </figure>
         </div>
-          
-        </header>
-      </section>
-      <section id="features">
+      </header>
+    </section>
+    <section id="features">
       <div class="container">
         <div class="row">
           <div class="features__description">
@@ -233,18 +262,15 @@
               </p>
               <button class="btn quality__btn">Learn More</button>
             </div>
-              <figure class="quality__img--wrapper">
-                
-                <img
+            <figure class="quality__img--wrapper">
+              <img
                 src="	https://treact.owaiskhan.me/static/media/hero-screenshot-1.40a097b525c2f8c9808e.png"
                 alt=""
                 class="quality__img"
-                />
-                
-              
-              </figure>
-            </div>
+              />
+            </figure>
           </div>
+        </div>
       </div>
     </section>
     <section id="STEPS">
@@ -302,7 +328,7 @@
         <div class="row values__wrapper">
           <div class="values__description">
             <h5 class="section__title purple">Values</h5>
-            <h1 class="section__heading">
+            <h1 class="section__heading--values">
               We always Abide by Our <span class="purple">Principles.</span>
             </h1>
             <p class="section__para">
@@ -370,7 +396,7 @@
             <div class="plan">
               <div class="plan__border--top"></div>
               <div class="plan__header">
-                <span class="name">Personal</span>
+                <span class="name">PERSONAL</span>
                 <span class="price">$17.99</span>
                 <span class="duration">MONTHLY</span>
               </div>
@@ -476,45 +502,45 @@
               <div class="testimonial__profile">
                 <img src="" alt="" class="testimonial__img" />
                 <img
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3.25&amp;w=512&amp;h=512&amp;q=80"
-                alt="Charlotte Hale"
-                class="testimonial__hale--img"
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3.25&amp;w=512&amp;h=512&amp;q=80"
+                  alt="Charlotte Hale"
+                  class="testimonial__hale--img"
                 />
                 <div class="testimonial__details">
                   <div class="testimonial__name">Charlotte Hale</div>
                   <div class="testimonial__role">Director, Delos Inc.</div>
                 </div>
               </div>
-                <div class="testimonial__buttons">
-                  <button class="testimonial__button">
-                    <svg
+              <div class="testimonial__buttons">
+                <button class="testimonial__button">
+                  <svg
                     fill="none"
                     stroke="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
                     viewBox="0 0 24 24"
-                    >
+                  >
                     <path d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
                   </svg>
-              </button>
-              <div class="divider"></div>
-              <button class="testimonial__button">
-                <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                >
-                <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-              </svg>
-            </button>
+                </button>
+                <div class="divider"></div>
+                <button class="testimonial__button">
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      </div>
       </div>
     </section>
     <section id="cta">
