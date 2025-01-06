@@ -302,7 +302,6 @@ input:focus {
     padding: 20px;
     font-size: 18px;
     font-weight: 700;
-    margin: 5px;
     width: 41%;
     
 
@@ -1078,6 +1077,9 @@ footer {
  }
 
  /*RESPONSIVENESS*/
+ @media (max-width: 728px) {
+
+ }
 
  @media (max-width: 1280px) {
     .header__container {
@@ -1098,5 +1100,44 @@ footer {
     .nav__link {
         display: none;
     }
-
+.header__row {
+    flex-direction: column;
+}
+.header__description {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.tag {
+    margin-top: 0;
+}
+.header__img {
+    margin: 30px;
+}
+.features__description {
+    flex-direction: column;
+    display: flex;
+    width: 90%;
+}
+.values__img {
+    max-width: 480px;
+}
+.values {
+    flex-direction: column;
+}
+.value__btn {
+    
+}
+ .plans{ 
+    flex-direction: column;
+}
+.container {
+    margin: 0px;
+}
+.container__cta {
+    padding: 50px;
+}
+.cta__row {
+    flex-direction: column;
+}
 }
