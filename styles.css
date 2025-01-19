@@ -1349,17 +1349,6 @@ letter-spacing: 1.6px;
             margin-right: 0;
         }
 
-
-
-
-
-
-
-
-
-
-
-
     .container {
         margin: 0px;
     }
@@ -1523,7 +1512,6 @@ margin-top: 40px;
 .header__img--wrapper {
         width: 100%;
         max-width: 448px;
-        justify-content: center;
         display: flex
 }
 .header__btn {
@@ -1848,8 +1836,11 @@ margin-top: 100px;
     width: 100%;
     max-width: 512px;
 }
+.quality__btn {
+    width: 50%;
+}
 .value__btn {
-    width: 40%;
+    width: 50%;
 }
 .section__para--pricing {
     font-size: 16px;
