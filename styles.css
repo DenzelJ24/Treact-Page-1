@@ -1842,12 +1842,19 @@ margin-top: 100px;
 .value__btn {
     width: 50%;
 }
+.values__img--wrapper {
+    display: flex;
+    justify-content: center;
+}
 .section__para--pricing {
     font-size: 16px;
 }
 .section__para--testimonials {
     font-size: 17px;
     margin-right: 30px;
+}
+.plan__btn {
+    width: 90%;
 }
 .btn__value--wrapper {
     margin-left: 30px;
@@ -1868,6 +1875,9 @@ margin-top: 100px;
     padding: 30px 1px;  
 }
 .footer__links {
-    justify-content: center;
+    justify-content: space-evenly;
+}
+.footer__copyright {
+    text-align: center;
 }
 }
